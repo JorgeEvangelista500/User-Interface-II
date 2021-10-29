@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey; 
+   
 }
 /* General Styles */
 html{
@@ -43,7 +43,7 @@ html{
 }
 body{
     font-size: 1.8rem;
-    line-height: 1.5;
+    line-height: 2.0;
 }
 h1{
     font-size: 6rem;
@@ -64,7 +64,26 @@ section, footer{
 }
 /* Header Section Styles */
 nav{
-    padding: 2% 0;
+    padding: 2% 3%;
+}
+header{
+    background-color: rosybrown;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%; 
+    
+}
+.links div{
+    background-color: white;
+    padding:0 4%;
+    border: 1px solid black;
+}
+.links div:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
 }
 
 /* Top section styles */
@@ -73,23 +92,50 @@ nav{
     justify-content: flex-end;
     align-content: center;
 }
-.top div{
-    justify-content: flex-end;
-}
+
 .top img{
     width: 80%;
+    margin:0 3%;
+}
+#me{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
     
+}
+.top button{
+    width: 15%;
 }
 
 /* Container class styles */
 .container{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
+.container div{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    padding: 2%;
+
+}
 .container img{
-    
+    align-items: center;
 }
-h3{
-    
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rosybrown;
 }
+
+/* Buttons */
+button{
+    background-color: white;
+    transition: .5s;
+}
+button:hover{
+    background-color:black;
+    color: white;
+}
+
