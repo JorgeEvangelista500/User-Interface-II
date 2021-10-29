@@ -1,1 +1,141 @@
-/* Add CSS styling here */
+
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+   
+}
+/* General Styles */
+html{
+    font-size:62.5%;
+}
+body{
+    font-size: 1.8rem;
+    line-height: 2.0;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 3rem;
+    text-align: left;
+}
+h3{
+    font-size: 2.2rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+section, footer{
+    padding:2% 0;
+}
+/* Header Section Styles */
+nav{
+    padding: 2% 3%;
+}
+header{
+    background-color: rosybrown;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%; 
+    
+}
+.links div{
+    background-color: white;
+    padding:0 4%;
+    border: 1px solid black;
+}
+.links div:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+/* Top section styles */
+.top{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.top img{
+    width: 80%;
+    margin:0 3%;
+}
+#me{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    
+}
+.top button{
+    width: 15%;
+}
+
+/* Container class styles */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container div{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    padding: 2%;
+
+}
+.container img{
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rosybrown;
+}
+
+/* Buttons */
+button{
+    background-color: white;
+    transition: .5s;
+}
+button:hover{
+    background-color:black;
+    color: white;
+}
+
