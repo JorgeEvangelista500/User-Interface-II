@@ -139,3 +139,46 @@ button:hover{
     color: white;
 }
 
+/*Responsive Styles */
+
+
+/*tablet view - 800px */
+@media (max-width: 800px){
+.top button{
+    width: 25%;
+}
+.links{
+    width: 45%;
+}
+
+ } /*this closes 800px media*/
+
+/*mobile view - 500px */
+@media (max-width: 500px){
+h1{
+    display: flex;
+    justify-content: center;
+}
+.top{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.container div{
+    width: 50%;
+}
+button{
+    padding: 4%;
+}
+.top div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links{
+    width: 100%;
+   flex-direction: column;
+   align-items: center;
+}
+
+}/*this closes 500px media*/
